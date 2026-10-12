@@ -1,0 +1,1212 @@
+{
+ "schema": "urhox-external-curation/1",
+ "generatedAt": "2026-09-23",
+ "legend": {
+  "g": "采纳等级：P1 直接接 / P2 借流程 / P3 借词表·口径 / P4 只作参照·反例",
+  "b": "判定依据：curated 已读过其 SKILL.md 或脚本头部 / provisional 仅依据 MANIFEST 描述与文件清单 / stock 已判定为当前阶段库存，不读",
+  "ph": "适用阶段：I 规模化采集与视觉特征提取 / II 资源高效自动化；[] = 当前库存",
+  "t": "目标环节：G0..G7",
+  "x": "建议抽取到 tools/external/ 的可执行件（包内相对路径，可为 glob）",
+  "k": "建议提炼进 references/2x 的知识件",
+  "n": "一句话备注"
+ },
+ "stockNote": "ph 为空 = 库存。不用，但保留在索引里，避免以后重复翻包。",
+ "entries": {
+  "design-planning-skills/github/Abhinavbwj__Urban-Design-Skills-Claude": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G3",
+    "G5"
+   ],
+   "x": [
+    "skills/urban-calculator/scripts"
+   ],
+   "k": [
+    "skills/urban-design-foundations/references",
+    "skills/block-and-density/references",
+    "skills/design-evaluation/references"
+   ],
+   "n": "量化口径 + 7 个计算器；欧美规范语境，中国项目需换标准"
+  },
+  "design-planning-skills/github/ChineduNlem__claude-civil-pm-skills": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：土木项目管理流程 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/github/ChineduNlem__claude-structural-engineering": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：结构计算，且仅单文件 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/github/Chuuta0__floor-plan-ai": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "floor-plan-ai/references/building-standards.md"
+   ],
+   "n": "执业建筑师任务书结构；.skill 内包需解压后才可读 ｜ 已读：执业流程：需求→任务书→出图→评审（已提炼进 references/02 §10.5.2）"
+  },
+  "design-planning-skills/github/Hai4320__InteriorDesign": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G3",
+    "G5"
+   ],
+   "x": [
+    ".claude/skills/interior/scripts"
+   ],
+   "k": [
+    ".claude/skills/interior/references"
+   ],
+   "n": "人体工学/家具尺寸/净距表，可校室内场景比例"
+  },
+  "design-planning-skills/github/Maximilianogc32__floorplan-vectorizer": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1",
+    "G2"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "references/tuning.md"
+   ],
+   "n": "位图→可测量 SVG，图像驱动最小范式"
+  },
+  "design-planning-skills/github/Soljourner__claude-engineering-skills": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：机械/航空工程数据库 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/github/artavision360__Lebanese-Building-Law": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [
+    "scripts/validate_skill.py"
+   ],
+   "k": [
+    "references/COMPLIANCE_CHECKLIST.md",
+    "references/PLANNING_ZONING_WORKFLOW.md"
+   ],
+   "n": "法规合规清单结构；许可证未声明，只读方法 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/github/chacha71__urban-rural-planning": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "中国城乡规划流程语境；许可证未声明 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/github/mnm500__roomsense": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G3"
+   ],
+   "x": [
+    "scripts/render.py"
+   ],
+   "k": [
+    ".claude/skills/interior-design/references"
+   ],
+   "n": "动线净距/光色/风格词汇，标注维度可借鉴"
+  },
+  "design-planning-skills/github/nicoguyon__3dplan": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：2D→3D 视频管线 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/github/op7418__guizang-yingzao-skill": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G7"
+   ],
+   "x": [],
+   "k": [
+    "yingzao"
+   ],
+   "n": "中文艺术指导/版面词表；许可证未声明 ｜ 已读：艺术指导合同（命题先于检索/素材分工/两座孤岛无效；已提炼进 references/22 §9）"
+  },
+  "design-planning-skills/github/sk8tingusmc__disto-floorplan-mapper": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G2"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "实测→户型图流程，供现场量测环节参照 ｜ 已读：实测导出→户型图（列名/精度列/方正化；已提炼进 references/02 §10.5.1）"
+  },
+  "design-planning-skills/github/zhuzhaoyun__ZZY-SKILLS": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：混合合集，仅一条与建筑说明生成相关 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/github/zyliu0__interior-vibing": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：室内报告形态 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/ai-interior-design-skill": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "库存：室内改造分阶段方案 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/ai-kujiale-design__thcjp": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "库存：酷家乐户型→布局→出图 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/ai-kujiale-design__wuweiqi1993": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "同上，另一发布者版本（代码件更多） ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/architect-method-lens": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md",
+    "references/evidence-model.md",
+    "references/output-schemas.md"
+   ],
+   "n": "从图纸/著述提取设计师法，含证据模型 schema"
+  },
+  "design-planning-skills/clawhub/architect": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G3",
+    "G5"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "形体/功能/可持续/规范四轴设计原则；2026-09-23 由 hub.cocoloop.cn/skills/4518 交叉核实后补入（镜像内容件字节一致） ｜ 已读：四轴设计原则（form/function/sustainability/codes）+ 先问动线再画平面（references/23 §0 口径来源）"
+  },
+  "design-planning-skills/clawhub/architecture": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "建筑理解分层（住宅→执业），无几何产出 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/bim-cost-estimation-cwicr": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "库存：BIM→造价（CWICR 库） ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/bim-qto": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G5"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "构件→工程量映射范式，可作第二类可复算指标 ｜ 库存：本轮未读且判定当前阶段不需要"
+  },
+  "design-planning-skills/clawhub/bimdown-zh": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "库存：BIM 文本化读写 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/cad-viewer": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "DWG/DXF 读取，接入参考图纸解析链 ｜ 已读：DWG/DXF 读取；采纳其“不自动装包、缺依赖就报错”的纪律（references/20 §5 与 23 §5）"
+  },
+  "design-planning-skills/clawhub/construction-quote": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：施工报价 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/cost-estimation-resource": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：资源法造价 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/engineering-drawing-parser": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "图纸→结构化数据，规模化采集主体之一"
+  },
+  "design-planning-skills/clawhub/gb-arch-cad-gen": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G7"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md",
+    "references"
+   ],
+   "n": "国标建筑平面出图规格（GB/T 50104 等）"
+  },
+  "design-planning-skills/clawhub/interior-budget": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：室内预算 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/interior-design": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "spaces.md",
+    "styles.md"
+   ],
+   "n": "库存：室内协调 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/interior-fullplan": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：室内全案 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/landscape-site-analysis-drafter": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1",
+    "G2"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "场地分析报告结构，补景观类取证口径"
+  },
+  "design-planning-skills/clawhub/open-construction-estimate": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：开放造价库 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/renovation-143m": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：单户型装修决策 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/renovation-all-in-one": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md",
+    "construction-flow"
+   ],
+   "n": "库存，但内容是 12 步×6 维施工数值手册，目录结构可借 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/renovation-inspector": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：装修监理 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "design-planning-skills/clawhub/rhinoclaw": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G5",
+    "G7"
+   ],
+   "x": [
+    "."
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "Rhino 3D 控制，配 Make2D 出正交线稿"
+  },
+  "design-planning-skills/clawhub/urban-renewal-analyst": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md",
+    "references/analysis_framework.md"
+   ],
+   "n": "照片→更新场景分析框架，图像特征提取可借鉴 ｜ 已读：照片→6 维现场分析打分框架（已提炼进 references/22 §8）"
+  },
+  "genre-art-scene-skills/github/AIPMAndy__3d-dev-skill": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G4"
+   ],
+   "x": [
+    "."
+   ],
+   "k": [
+    "docs"
+   ],
+   "n": "Three.js 场景与资产处理，轻量 ｜ 已读：轻量 Three.js 场景与资产处理（references/18 P2 备注）"
+  },
+  "genre-art-scene-skills/github/RobLe3__cc-blender-skill": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "I",
+    "II"
+   ],
+   "t": [
+    "G1",
+    "G2",
+    "G5"
+   ],
+   "x": [
+    "plugin/skills"
+   ],
+   "k": [
+    "plugin/skills/reference-analysis-validator/references/metrics-and-thresholds.md",
+    "knowledge/15-cross-cutting"
+   ],
+   "n": "★ 参考图→几何的硬门禁（IoU/SSIM/bbox/部件数）+ 多视图冲突裁决"
+  },
+  "genre-art-scene-skills/github/Xander-Rudolph__game-asset-engine": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G4"
+   ],
+   "x": [
+    "prompts"
+   ],
+   "k": [
+    "docs",
+    "AUDIT.md"
+   ],
+   "n": "提示词模板库（buildings/characters/creatures）+ 容器化管线 ｜ 已读：提示词模板库（buildings/characters/creatures）+“一轮一道门”纪律（references/18/22 §9 的对照）"
+  },
+  "genre-art-scene-skills/github/adryanmoldokkr32-pixel__threejs-skill-package": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G4"
+   ],
+   "x": [
+    "skills/source"
+   ],
+   "k": [
+    "DECISIONS.md",
+    "LESSONS.md"
+   ],
+   "n": "24 个确定性技能的四层分工（core/impl/syntax/errors） ｜ 已读：119 篇文档的四层分工（core/impl/syntax/errors）+ 每条技能自带“防常见错”段（references/18 的组织参照）"
+  },
+  "genre-art-scene-skills/github/ig-shadow-walker__BlenderXAlpha-3DGenSkill": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G4"
+   ],
+   "x": [
+    "."
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "描述→Blender 建模，作管线对照 ｜ 已读：描述→Blender 场景（含缩放/落地/摆放）作管线对照（references/18 P2）"
+  },
+  "genre-art-scene-skills/github/ismael-joffroy-chandoutis__claude-skills-public": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G4",
+    "G5"
+   ],
+   "x": [],
+   "k": [
+    "procedural-generation/SKILL.md",
+    "art-consistency/SKILL.md"
+   ],
+   "n": "程序化的种子/约束/验证闸三件套（文档型）"
+  },
+  "genre-art-scene-skills/github/viettranx__3dviz-pro-max": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "I",
+    "II"
+   ],
+   "t": [
+    "G1",
+    "G6"
+   ],
+   "x": [
+    "skills/3dviz-pro-max/scripts/capture.py",
+    "skills/3dviz-pro-max/scripts/capture_view_quality.py",
+    "skills/3dviz-pro-max/scripts/manifest_contract.py"
+   ],
+   "k": [
+    "skills/3dviz-pro-max/references/catalog-knowledge",
+    "skills/3dviz-pro-max/references/lighting-direction-and-scale.md",
+    "skills/3dviz-pro-max/references/object-reasoning.md"
+   ],
+   "n": "★ 帧可用性判据（第二实现）+ 清单契约 + 特征词表"
+  },
+  "genre-art-scene-skills/github/wotonger__GameCreative-skills": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G4"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "设计→资产→交接的 7 条工作流 ｜ 已读：双格式设计文档（HTML 给人 + Markdown 给 AI）+ 7 条工作流（references/07 交付形态参照）"
+  },
+  "genre-art-scene-skills/clawhub/chinese-ink-painting-generator": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "中式山水风格词表（仅词表，产出图不得作几何证据）"
+  },
+  "genre-art-scene-skills/clawhub/cyberpunk-image-generator": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "赛博配色/霓虹/材质词表"
+  },
+  "genre-art-scene-skills/clawhub/dark-fantasy-art-generator": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "暗黑奇幻风格词表 ｜ 已读：风格强制句与关键词表（references/22 §2 lighting 轴来源）"
+  },
+  "genre-art-scene-skills/clawhub/fantasy-map-generator": {
+   "g": "P4",
+   "b": "curated",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "反例：生成内容与目标几何无关，禁止进证据链"
+  },
+  "genre-art-scene-skills/clawhub/game-design-fantasy-extractor": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "玩家幻想抽取链，设计透镜 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "genre-art-scene-skills/clawhub/game-designer-toolkit": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "GDD/系统/关卡工具箱结构 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "genre-art-scene-skills/clawhub/goldenseed": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G4"
+   ],
+   "x": [
+    "."
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "确定性熵流（同种子同输出+hash）；⚠ GPL-3.0+ 注意传染性"
+  },
+  "genre-art-scene-skills/clawhub/gothic-portrait-generator": {
+   "g": "P4",
+   "b": "curated",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：哥特肖像风格"
+  },
+  "genre-art-scene-skills/clawhub/level-design-checklist-skill": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G5"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "关卡评审清单结构（仅进 D 表，不得混入 A/B 表）"
+  },
+  "genre-art-scene-skills/clawhub/low-budget-3d": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "references/style-constitution.md",
+    "references/world-builder.md",
+    "references/prompt-compiler.md",
+    "references/style-validator.md"
+   ],
+   "n": "风格宪章 + 校验器 + 提示词编译器，词表结构化程度高"
+  },
+  "genre-art-scene-skills/clawhub/mapbox-cartography": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [
+    "."
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "分幅/比例/表达规范，采集组织方式 ｜ 库存：本轮未读且判定当前阶段不需要"
+  },
+  "genre-art-scene-skills/clawhub/neon-art-generator": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "霓虹光效词表"
+  },
+  "genre-art-scene-skills/clawhub/poetry-daily-art": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "诗配山水画的图文版式 ｜ 已读：诗配山水的图文版式与逐日推进数据文件（references/22 §2 composition 轴）"
+  },
+  "genre-art-scene-skills/clawhub/steampunk-art-generator": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "蒸汽朋克材质/形体词表"
+  },
+  "genre-art-scene-skills/clawhub/surreal-art-generator": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：超现实美术 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "genre-art-scene-skills/clawhub/terrain-route-video": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：地形路线动画版式 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "model-to-drawing-skills/github/github__awesome-copilot": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G5",
+    "G7"
+   ],
+   "x": [
+    "freecad-scripts",
+    "rhino3d-scripts"
+   ],
+   "k": [
+    "freecad-scripts/references",
+    "rhino3d-scripts/references"
+   ],
+   "n": "FreeCAD（含 TechDraw/Draft）与 Rhino 脚本专家；单文件库，非完整克隆"
+  },
+  "model-to-drawing-skills/clawhub/batch-cad-converter": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "I",
+    "II"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "批量转换的进度/错误处理工程范式 ｜ 已读：批量转换的进度/错误处理/汇总报告范式（references/23 §5 依赖链）"
+  },
+  "model-to-drawing-skills/clawhub/cad-to-data": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "Revit/IFC/DWG/DGN→结构化数据 ｜ 已读：Revit/IFC/DWG/DGN → 结构化数据（references/23 §2 字段清单来源）"
+  },
+  "model-to-drawing-skills/clawhub/cadstack": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G6",
+    "G7"
+   ],
+   "x": [
+    "lib/drawing.py",
+    "lib/backends"
+   ],
+   "k": [
+    "DESIGN.md",
+    "lib/templates.py"
+   ],
+   "n": "★ 3D→正交/剖面/等轴测→标注→DXF/SVG/PDF（投影算法可单独抽出）"
+  },
+  "model-to-drawing-skills/clawhub/character-design-sheet": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "turnaround 设定表结构，若复刻对象含角色可用 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "model-to-drawing-skills/clawhub/copilot-for-revit": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "需本机装 Revit，仅借操作范式 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "model-to-drawing-skills/clawhub/drawing-insight-pro": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "施工图批量解析+版本差异（仅文档，脚本需自写） ｜ 已读：扫描件需 OCR 预处理 + 版本差异 + 跨图索引（references/23 §1/§2）"
+  },
+  "model-to-drawing-skills/clawhub/eplan-drawing-parser": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "电气图纸→元件表/拓扑，解析链补充 ｜ 已读：矢量 PDF 走几何提取（100% 无 OCR 误差）——references/23 §1 形态判定的直接来源"
+  },
+  "model-to-drawing-skills/clawhub/gb-cad-figure": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G7"
+   ],
+   "x": [
+    "."
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "国标图框/标题栏/线型/标注模板 + PDF/DXF 三格式交付"
+  },
+  "model-to-drawing-skills/clawhub/gcadclaw": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G6"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "references/2d-pygcadwin-workflow.md",
+    "references/feedback-loop.md"
+   ],
+   "n": "生成→截图反馈→实体验证→修复闭环；默认三视图约定"
+  },
+  "model-to-drawing-skills/clawhub/ifc-qto-extraction": {
+   "g": "P3",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G5"
+   ],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "IFC/Revit 算量口径 ｜ 已读：IFC/Revit 算量以构件为单位的做法（references/23 §4：数量是计量口径、不是形状）"
+  },
+  "model-to-drawing-skills/clawhub/ip-character-consistency-studio": {
+   "g": "P3",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "角色视觉包结构 ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "model-to-drawing-skills/clawhub/map-grabber": {
+   "g": "P2",
+   "b": "stock",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "OSM→SVG/GeoPackage/DXF 场地底图 ｜ 库存：本轮未读且判定当前阶段不需要"
+  },
+  "model-to-drawing-skills/clawhub/openclaw-freecad-mcp": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G5"
+   ],
+   "x": [
+    "addon",
+    "src"
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "MCP 直控 FreeCAD，可作第二独立实现"
+  },
+  "model-to-drawing-skills/clawhub/openscad-automation": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G5"
+   ],
+   "x": [
+    "."
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "OpenSCAD 纯文本几何，天然可 diff，适合作对账第二实现"
+  },
+  "model-to-drawing-skills/clawhub/pindou-pattern": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G7"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "「一份数据两种产出」：SVG 图纸 + CSV 物料清单"
+  },
+  "model-to-drawing-skills/clawhub/sketchup-ppt-generator": {
+   "g": "P4",
+   "b": "stock",
+   "ph": [],
+   "t": [],
+   "x": [],
+   "k": [],
+   "n": "库存：汇报 PPT ｜ 库存：已判定当前阶段不需要，不读"
+  },
+  "model-to-drawing-skills/clawhub/skill-drawing-diff-analyzer": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G6"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "SKILL.md",
+    "references/format-guide.md"
+   ],
+   "n": "★ 2D 图纸↔3D 模型正交投影逐特征比对，可作第四条验收通道"
+  },
+  "model-to-drawing-skills/clawhub/skill-freecad": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G5"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "examples"
+   ],
+   "n": "参数化 JSON 驱动 FreeCAD（primitive/boolean/export 等 ops）"
+  },
+  "model-to-drawing-skills/clawhub/solidworks-modeling": {
+   "g": "P2",
+   "b": "curated",
+   "ph": [
+    "II"
+   ],
+   "t": [
+    "G7"
+   ],
+   "x": [
+    "."
+   ],
+   "k": [
+    "SKILL.md"
+   ],
+   "n": "SOLIDWORKS COM 自动化，含工程图 .SLDDRW ｜ 已读：COM API 的 ProgID 版本对照表与“不操 GUI、全走脚本”纪律（references/20 §5 与 23 §6）"
+  },
+  "model-to-drawing-skills/clawhub/ssq": {
+   "g": "P1",
+   "b": "curated",
+   "ph": [
+    "I"
+   ],
+   "t": [
+    "G1"
+   ],
+   "x": [
+    "scripts"
+   ],
+   "k": [
+    "README.md"
+   ],
+   "n": "建筑图纸解析（DWG/DXF/PDF/图片→文字/材料表/尺寸标注）"
+  }
+ }
+}

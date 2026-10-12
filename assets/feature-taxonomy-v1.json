@@ -1,0 +1,79 @@
+{
+  "schema": "urhox-feature-taxonomy/1",
+  "version": "v1",
+  "frozenAt": "2026-09-23",
+  "note": "本文件与 references/22-visual-feature-taxonomy.md 第 2 节的表格同源；改一处必须改另一处，由 scripts/feature_taxonomy_check.py 校验。",
+  "axes": {
+    "form": {
+      "label": "形态",
+      "terms": {
+        "layered-tier": {"desc": "层叠退台式体量（上小下大、层层收分）", "source": "天守阁案例；单体建筑通用", "measurable": true, "measure": "层数与收分比"},
+        "saucer-disc": {"desc": "扁盘 + 中心凸起", "source": "Y星飞碟案例", "measurable": true, "measure": "盘径/盘厚/凸起高"},
+        "ring-void": {"desc": "环形实体，中心为空", "source": "Y星飞碟 BrimRing（实心 6960 / 节点盒 31104 格）", "measurable": true, "measure": "外径/内径/实心率（缺实心率会把体积高估）"},
+        "quadrant-site": {"desc": "四分象限式场地", "source": "天守阁 GroundNE/NW/SE/SW", "measurable": true, "measure": "象限尺寸"},
+        "stepped-roof": {"desc": "阶梯/层叠屋面", "source": "天守阁 RoofLower/Middle/Third/Upper", "measurable": true, "measure": "出檐深度"}
+      }
+    },
+    "material": {
+      "label": "材质",
+      "terms": {
+        "tile-blue": {"desc": "蓝瓦", "source": "天守阁绀青瓦面", "measurable": false},
+        "timber-frame": {"desc": "木构架", "source": "女巫小屋 / 欧洲半木结构", "measurable": false},
+        "thatch": {"desc": "茅草顶", "source": "女巫小屋（沼泽小屋）", "measurable": false},
+        "stone-plinth": {"desc": "石台基", "source": "天守阁 CastleBase", "measurable": true, "measure": "台基高"},
+        "metal-gold-trim": {"desc": "金饰件", "source": "天守阁檐下金饰、金圆饰钉", "measurable": false},
+        "painted-lowpoly": {"desc": "低模平涂", "source": "low-budget-3d style-constitution（polygon_density: low）", "measurable": false}
+      }
+    },
+    "lighting": {
+      "label": "光照",
+      "terms": {
+        "night-scene": {"desc": "夜景实拍参考的主体光比特征", "source": "天守阁 _src/img/71701380_*", "measurable": true, "measure": "光比"},
+        "dusk-warm": {"desc": "黄昏暖调、长阴影", "source": "天守阁 T-08 对位机位", "measurable": false},
+        "dark-dramatic": {"desc": "大面积暗部 + 局部高光", "source": "gothic-portrait-generator", "measurable": false},
+        "neon-glow": {"desc": "大面积自发光 + 湿地反射", "source": "neon-art-generator / cyberpunk-image-generator", "measurable": false},
+        "zen-minimal": {"desc": "低对比、大面积留白", "source": "chinese-ink-painting-generator", "measurable": false}
+      }
+    },
+    "color": {
+      "label": "色彩（仅相对描述，不得定真彩）",
+      "terms": {
+        "cool-dominant": {"desc": "冷色主导（只写色相区间）", "source": "本工程纪律（照片定不了真彩）", "measurable": false},
+        "warm-accent": {"desc": "小面积暖色对比", "source": "同上", "measurable": false},
+        "monochrome-ink": {"desc": "近乎无彩", "source": "chinese-ink-painting-generator", "measurable": false},
+        "synthwave-palette": {"desc": "品红/青/紫的高饱和组合", "source": "cyberpunk-image-generator 风格强制句", "measurable": false}
+      }
+    },
+    "composition": {
+      "label": "构图",
+      "terms": {
+        "front-elevation": {"desc": "正立面为主", "source": "references/19 §2 轴契约", "measurable": true, "measure": "角色已声明时"},
+        "top-plan": {"desc": "俯视平面为主", "source": "references/19 §2 轴契约", "measurable": true, "measure": "角色已声明时"},
+        "three-quarter": {"desc": "三分之四视角", "source": "宣发图常规", "measurable": false},
+        "map-tiles": {"desc": "分幅/瓦片", "source": "官方地图瓦片 / mapbox-cartography", "measurable": true, "measure": "分幅编号可溯"}
+      }
+    },
+    "style_dna": {
+      "label": "风格 DNA（借鉴 low-budget-3d 的结构化风格宪法）",
+      "note": "允许负向取值；复刻时应同时登记“要复现的”与“要避免的”。",
+      "terms": {
+        "era:*": {"desc": "制作时代语境（如 early_2000s）", "source": "low-budget-3d/references/style-constitution.md", "measurable": false},
+        "density:low": {"desc": "面数/细节密度档", "source": "同上（polygon_density）", "measurable": false},
+        "topology:simple": {"desc": "拓扑简化程度", "source": "同上", "measurable": false},
+        "proportions:stylized": {"desc": "比例风格化程度（含 awkward 一类负向描述）", "source": "同上", "measurable": false}
+      }
+    }
+  },
+  "forbiddenUses": [
+    "作为尺寸/形状依据（属于 01 的证据链）",
+    "跨词表版本直接比较标签计数",
+    "当作“已复现”的判据（属于 04 的四张检查表）",
+    "替代 references/19 的可量测性判定"
+  ],
+  "externalDisciplinesAdopted": [
+    "Never call true color, undertone, or sheen from a photo（室内类技能）",
+    "A rendered image is not a color reference（室内类技能）",
+    "风格宪章式结构化写法 + 允许负向取值（low-budget-3d）",
+    "严格风格强制句：把风格关键词固定成不可协商的参数（cyberpunk / neon / steampunk 类）"
+  ]
+}

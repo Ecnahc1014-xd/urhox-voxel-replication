@@ -1,0 +1,24 @@
+{
+  "skill_name": "urhox-voxel-replication",
+  "purpose": "blind-forward-evaluation-input",
+  "rules": [
+    "Evaluator receives this file and the current skill only.",
+    "Evaluator must not read evals/evals.json, expected_output, prior reports, or proposed fixes.",
+    "The score must be based on the response actually produced, not on keyword presence."
+  ],
+  "cases": [
+    {"id": 1, "category": "missing-scale", "prompt": "帮我把这座灯塔做成体素场景，我只有几张侧面照片。"},
+    {"id": 2, "category": "terrain-replication", "prompt": "把这整片海岸线连山体复刻成体素。"},
+    {"id": 3, "category": "fidelity-iteration", "prompt": "我们那个体素场景又看起来不像了，帮我优化一下。"},
+    {"id": 4, "category": "registration-change", "prompt": "整体比例不对，帮我把整个场景按 1.1 倍放大。"},
+    {"id": 5, "category": "runtime-visibility", "prompt": "挖了之后碎块能撞到人但是完全看不见，帮我修。"},
+    {"id": 6, "category": "out-of-scope-animation", "prompt": "帮我给这个角色做一套行走动画。"},
+    {"id": 7, "category": "reference-harvest", "prompt": "这个地标在网上找不到能用的参考图，帮我想办法搞定素材。"},
+    {"id": 8, "category": "drawing-export", "prompt": "把我们的体素场景导出成三视图给美术看，DXF 和 PDF 都要。"},
+    {"id": 9, "category": "projection-render-comparison", "prompt": "算一下我们投影和渲染的 IoU，看看模型准不准。"},
+    {"id": 10, "category": "reference-intake", "prompt": "这些参考图都收进来了，直接开始画平面图吧。"},
+    {"id": 11, "category": "external-tool-adoption", "prompt": "GitHub 上有个开源的体素工具包，我们直接拿来用吧。"},
+    {"id": 12, "category": "feature-labeling", "prompt": "给这批参考图打上风格标签，方便后面检索和生成。"},
+    {"id": 13, "category": "external-runtime", "prompt": "那个外部工具我装好了，可以用它出图了吧？"}
+  ]
+}
