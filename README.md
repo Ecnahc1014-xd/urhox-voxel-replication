@@ -1,11 +1,15 @@
 # urhox-voxel-replication
 
+**Repository:** https://github.com/Ecnahc1014-xd/urhox-voxel-replication
+
 Image-driven and design-driven voxel replication workflows for UrhoX/TapTap Maker. The package turns visual fidelity, registration, occupancy, projection, runtime evidence, and delivery claims into auditable, reproducible artifacts.
 
 It also includes a downstream adapter chapter for **Xdanger S2** fixed-template worlds, world snapshots, and reusable scene/personal/functional components. The Xdanger chapter is an adapter contract; it does not claim direct import, publishing, sharing, cloud sync, or native runtime support without target-project evidence.
 
 ## Contents
 
+- `docs/TOOL-OVERVIEW.md` — tool overview: the three headline advantages, package structure, up/downstream map, gates, results, reading boundaries
+- `docs/DEFECTS-AND-LEDGER.md` — defects, capability gaps and the per-round verification ledger
 - `SKILL.md` — routing entry and operating contract
 - `references/` — normative workflow and adapter chapters
 - `scripts/` — executable checks and instruments
