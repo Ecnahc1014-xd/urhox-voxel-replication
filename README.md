@@ -16,10 +16,10 @@ It also includes a downstream adapter chapter for **Xdanger S2** fixed-template 
 
 Run from this directory with Python 3.12 or the interpreter bound by the project:
 
-``powershell
+```powershell
 $env:PYTHONUTF8 = "1"
 python tests/run_tests.py --json --project-root <project-root>
-``
+```
 
 For a portable package-only check, use `--skip-environment --skip-external`. A skipped check remains skipped; it is not a complete release pass. Add `--require-complete` for a release gate.
 
