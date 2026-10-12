@@ -192,7 +192,7 @@ declared_by / declared_at / declared_rule   签核人与依据（“判级/角�
 | 语言/依赖 | Python + OpenCV + NumPy | 基础入包／透明域：Python + Pillow；复杂目标分割：另需 NumPy + OpenCV，绑定解释器 |
 | Mask 提取 | alpha / Canny 边缘 / Otsu 双极性 | 有效源 alpha；否则目标框＋前／背景笔划驱动 GrabCut；缺目标则 NEEDS_SUBJECT，不猜亮／暗主体 |
 | 连通域 | `cv2.findContours` + `contourArea` | 自写 BFS 标记 + 像素面积 |
-| 阈值 | 同 §3 左列 | **同一套数值**（数值引自对方） |
+| 阈值 | 同 §3 左列 | **同一套数值**（数值引自 `cc-blender-skill`） |
 | 判定 | `refuse final export if hard gates fail` | 同一策略：硬门禁不过则不产出下游输入 |
 
 **这是一次有意的"双实现"**：同一套指标定义、两套独立代码。两者结论不一致时按 `18` §5 开调查，不允许二选一。差异登记在本表，改实现必须同时改这张表。
