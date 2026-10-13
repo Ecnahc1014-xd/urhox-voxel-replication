@@ -1,8 +1,8 @@
 ---
 name: urhox-voxel-replication
-description: "把真实或设定对象复刻为 UrhoX/TapTap Maker 体素场景，或审计这类场景的参考证据、坐标注册、占用/投影/运行时验收时使用；也用于 Xdanger S2 固定模板地图、世界快照和可复用组件的下游适配。适用于城市、建筑、室内、景观和道具。不要用于普通 3D/美术资产、纯动画或与场景几何无关的玩法开发。"
+description: "把真实或设定对象复刻为 UrhoX/TapTap Maker 体素场景，或审计这类场景的参考证据、坐标注册、占用/投影/运行时验收时使用。适用于城市、建筑、室内、景观和道具。不要用于普通 3D/美术资产、纯动画或与场景几何无关的玩法开发。"
 metadata:
-  version: "3.50"
+  version: "3.51"
 ---
 
 # 体素复刻（通用）
@@ -78,7 +78,7 @@ metadata:
 
 **优势三条（对外口径，按此顺序写）**：
 1. **不需要外部引擎，Maker 网页端即可使用**：产物是引擎原生件，Web/WASM 目标可直接承载（已有工程在 Web 预览跑过，含 Web 回落策略）。
-2. **支持 XDanger（S2 上游能力，当前未被调用）**：按 `references/25` 的契约交付（0.1 m 世界与固定模板、6×6 场景块、world_snapshot v3、三条组件路径、G0–G7）——**能力成立**（可挂载为 S2 资产上游）；**当前不需要**（XDanger 资产自持）⇒ 需求侧空档，不是能力缺失；详见 `docs/TOOL-OVERVIEW.md` §0.1。
+2. **目标世界契约参数化（单位方块 + 人物格数两条强规则）**：目标世界的单位方块边长、格线容差、人物站立高度对应格数是登记在参数表里的强规则（`references/08` §3.1，含换边长重采样与整数格高）；换目标世界只换契约参数，不重写流程，也不承诺任何特定下游工程的文件格式。
 3. **先进的验证工程**：H1–H6 入包闸、配准防伪四条、四表 A–D、状态语义、裁剪留痕、失败件保留、反自欺纪律、包自检（含引用存在性检查）。
 
 边界（防误读）：
@@ -280,7 +280,6 @@ G1 不是直接从“搜图”开始，而是**先做一次 prior-art 扫描**�
 | **视觉特征词表：六轴标签、冻结词表 v1、标签 schema 与禁止用途** | `references/22-visual-feature-taxonomy.md`（词表：`assets/feature-taxonomy-v1.json`；校验：`scripts/feature_taxonomy_check.py`） |
 | **参考数据解析：矢量/位图判定、各形态可取字段、产出契约、精度与合法性** | `references/23-reference-data-parsing.md` |
 | **（可选）语义保真增强：必含项清单、关系检查、负样本协议（不属门禁）** | `references/24-semantic-enhancement-optional.md`——只在项目主动启用时才适用；可直接填 `templates/semantic_check_sheet.md` |
-| **Xdanger S2 下游适配：固定模板、0.1m 世界、快照、场景/个人/功能组件与运行验证** | `references/25-xdanger-adaptation.md`——只在明确交付到 Xdanger 时启用；不能替代 Xdanger 工程内注册和原生运行验证 |
 
 ### 5.1 工具总表
 

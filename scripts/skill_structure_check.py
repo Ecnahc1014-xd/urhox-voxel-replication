@@ -23,7 +23,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SKILL = os.path.dirname(HERE)
-ALLOWED_GAPS = {"17"}          # 已合并进 05，见 INDEX.md §3
+ALLOWED_GAPS = {"17", "25"}   # 17 已合并进 05；25 下游适配章已移除（v3.51），强规则并入 08 §3.1，见 INDEX.md §3
 
 
 def read(path):
@@ -122,8 +122,8 @@ def main():
     stats["numberingGaps"] = gaps
 
     # 7 引用存在性：文档里写到的包内路径必须在磁盘上真实存在
-    #    （2026-10-14 加固：v3.49 曾出现 SKILL.md/INDEX.md/CHANGELOG 都指向
-    #     references/25-xdanger-adaptation.md、但文件根本没写的情况，旧检查只验编号不验存在）
+    #    （2026-10-14 加固：v3.49 曾出现 SKILL.md/INDEX.md/CHANGELOG 都指向一个
+    #     references 文件、但文件根本没写的情况，旧检查只验编号不验存在）
     ref_pattern = re.compile(r"(?<![\w/.\-])(?:references|scripts)/[A-Za-z0-9_.\-]+\.(?:md|py)")
     numbered_ref = re.compile(r"(?<![\w/.\-])references/\d\d[a-z]?-[A-Za-z0-9_.\-]+\.md")
     missing = {}

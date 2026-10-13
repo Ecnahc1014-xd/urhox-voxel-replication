@@ -4,7 +4,7 @@
 
 Image-driven and design-driven voxel replication workflows for UrhoX/TapTap Maker. The package turns visual fidelity, registration, occupancy, projection, runtime evidence, and delivery claims into auditable, reproducible artifacts.
 
-It also includes a downstream adapter chapter for **Xdanger S2** fixed-template worlds, world snapshots, and reusable scene/personal/functional components. The Xdanger chapter is an adapter contract; it does not claim direct import, publishing, sharing, cloud sync, or native runtime support without target-project evidence.
+World contracts are parameterized, not hard-coded to one target: the unit voxel cube size (single constant, integer grid, explicit quantization tolerance, resampling on size change) and the character↔voxel correspondence (standing height = whole number of unit cubes) are strong rules registered in `references/08` §3.1. No claim is made about any specific downstream engine's file formats.
 
 ## Contents
 
@@ -31,4 +31,4 @@ The Skill frontmatter can be checked with `quick_validate.py` from `skill-creato
 
 ## Scope
 
-This repository contains workflow instructions, scripts, test fixtures, and documentation. It does not include proprietary game assets, player saves, or a copy of the Xdanger project.
+This repository contains workflow instructions, scripts, test fixtures, and documentation. It does not include proprietary game assets, player saves, or copies of third-party reference projects.
