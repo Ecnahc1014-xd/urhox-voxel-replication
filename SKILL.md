@@ -2,7 +2,7 @@
 name: urhox-voxel-replication
 description: "把真实或设定对象复刻为 UrhoX/TapTap Maker 体素场景，或审计这类场景的参考证据、坐标注册、占用/投影/运行时验收时使用。适用于城市、建筑、室内、景观和道具。不要用于普通 3D/美术资产、纯动画或与场景几何无关的玩法开发。"
 metadata:
-  version: "3.51"
+  version: "3.52"
 ---
 
 # 体素复刻（通用）
@@ -301,6 +301,7 @@ G1 不是直接从“搜图”开始，而是**先做一次 prior-art 扫描**�
 | `ref_identity_gate.py` | 参考图入包闸 H5–H6（对象×区域×版本同一性 + 对象在场性；读 `identity_declarations.json`） | 0 无 FAIL · 1 有 FAIL · 2 用法错 |
 | `design_gate.py` | **设计驱动模式门禁 G0–G8**（无外部真值：结构合法/边界/接地/高度带与规则推导/屋顶覆盖/开口归属/可达/必需项/语义分组）；入 = 设计声明 + Blueprint + 占用栅格 +（可选）iso-map 地板图 | 0 全过 · 1 有 FAIL · 2 用法/IO 错 · 3 输入不足（裁剪写入 `skipped[]` 留痕） |
 | `registration_crosscheck.py` | 配准防伪四条（留出法 / 独立一致性落点率 / 零残差警示 / 裁剪完整性） | 0 通过 · 1 未通过 · 2 用法错 |
+| `unit_character_contract.py` | **单位方块与人物格数两条强规则**的机器检查（`08` §3.1.3：C1 定义唯一 / C2 站高整数格 / C3 姿态排序 / C4 净空量化；只读仪器，`--self-test` 带 6 个负样本） | 0 通过 · 1 未通过 · 2 用法/输入缺失 |
 | `heightfield_form_check.py` | 形制/形态读数（单一高程带占比、最满 1 米带占比、无实测支撑占比；结论名 `TERRACE-UNPROVEN` = 形态未经独立证据校验；`field_kind=terrain` 才适用） | 0 正常 · 1 命中 `TERRACE-UNPROVEN` · 2 用法错 |
 | `form_shape_check.py` | 形制/形态复核（高度 provenance 分层 / 剪影长宽比与转折点 / 与 I-12 读数交叉复核；`--self-test` 内置 r17/r18 正样本自检，防误伤正确实践） | 0 通过 · 1 有旗标（`PROVENANCE-UNRESOLVED`/`TERRACE-UNPROVEN`/`SILHOUETTE-MISMATCH`）· 2 用法错 · 3 自检失败 |
 | `check_crossrefs.py` | 全库交叉引用体检（悬空指针） | 0 无悬空 · 1 有悬空 |

@@ -68,7 +68,7 @@
 ### 4.1 脚本清单（仅名字；语义与退出码见 `SKILL.md` §5.1）
 
 `urhox_capability_probe.py` · `reference_intake_gate.py` · `check_crossrefs.py` ·
-`skill_structure_check.py` · `audit_phantom_check.py` · `compare_masks.py` ·
+`unit_character_contract.py` · `skill_structure_check.py` · `audit_phantom_check.py` · `compare_masks.py` ·
 `build_evidence_manifest.py` · `case_index.py` · `runtime_env_probe.py` ·
 `external_asset_index.py` · `external_skill_map_check.py` · `external_tool_fetch.py` ·
 `voxel_occupancy_dump.py` · `voxel_silhouette_drawing.py` · `voxel_orthographic_drawing.py` ·
